@@ -21,8 +21,18 @@ class MyApp extends StatelessWidget {
               'Eliseu Videira',
               style: TextStyle(
                 fontSize: 40.0,
-                fontWeight: FontWeight.bold,
+                fontFamily: 'Permanent Marker',
                 color: Colors.white,
+              ),
+            ),
+            Text(
+              'Flutter Developer'.toUpperCase(),
+              style: TextStyle(
+                color: Colors.teal[100],
+                letterSpacing: 4.0,
+                fontWeight: FontWeight.bold,
+                fontSize: 20.0,
+                fontFamily: 'Source Sans Pro',
               ),
             ),
           ],
