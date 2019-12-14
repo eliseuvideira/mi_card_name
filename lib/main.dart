@@ -3,6 +3,37 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  Widget _buildCard({
+    @required IconData icon,
+    @required String text,
+  }) {
+    return Container(
+      color: Colors.white,
+      padding: EdgeInsets.all(10.0),
+      margin: EdgeInsets.symmetric(
+        vertical: 10.0,
+        horizontal: 25.0,
+      ),
+      child: Row(
+        children: <Widget>[
+          Icon(
+            icon,
+            color: Colors.teal,
+          ),
+          SizedBox(
+            width: 10.0,
+          ),
+          Text(
+            text,
+            style: TextStyle(
+              color: Colors.teal[900],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,6 +66,8 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'Source Sans Pro',
               ),
             ),
+            _buildCard(icon: Icons.phone, text: '+44 123 456 789'),
+            _buildCard(icon: Icons.email, text: 'myemail@gmail.com')
           ],
         )),
       ),
