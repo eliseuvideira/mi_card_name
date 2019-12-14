@@ -1,4 +1,4 @@
-# mi_cart_flutter
+# mi_card_flutter
 
 A new Flutter project.
 

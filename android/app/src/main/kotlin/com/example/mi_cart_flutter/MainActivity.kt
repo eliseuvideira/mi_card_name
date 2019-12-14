@@ -1,4 +1,4 @@
-package com.example.mi_cart_flutter
+package com.example.mi_card_flutter
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
